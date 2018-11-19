@@ -7,9 +7,9 @@ setup(
     author='https://github.com/BiomedicalMachineLearning/CancerDeepLearning.git',
     author_email='quan.nguyen@uq.edu.au',
     # package modules
-    packages=['SimpleModel'],
+    packages=['CancerDeepLearning'],
     # dependencies
-    install_requires=['numpy'],
+    install_requires=['numpy', 'tensorflow'],
     # version
     version='0.1',
     # license
