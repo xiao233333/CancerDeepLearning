@@ -53,7 +53,7 @@ y_vals_test = y_vals[test_indices]
 #1. Define Tensorflow computational graph for Logistic Model
 
 # Initialize placeholders
-nFeatures = x_vals_cnv_train.shape[1]
+nFeatures = x_vals_cnv_train.shape[1]  # number of snv/rna
 dimResponse = y_vals_train.shape[1]
 # Define inputs for session.run 
 x_data = tf.placeholder(shape=[None, nFeatures], dtype=tf.float32)# tensor with nFeature columns. Note None takes any value when computation takes place 
