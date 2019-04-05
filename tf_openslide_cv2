@@ -26,10 +26,14 @@ From: tensorflow/tensorflow:1.10.1-gpu
 
   # additional packages
   apt-get update
+  apt-get install -y python3 python3-pip
+  apt-get install -y wget git vim build-essential cmake
   apt-get install -y openslide-tools
-  pip install opencv-python
-  pip install openslide-python
+  apt-get install -y libsm6 libxext6
+  pip3 install opencv-python
+  pip3 install openslide-python
 
+  apt-get clean
 %runscript
   # executes with the singularity run command
   # delete this section to use existing docker ENTRYPOINT command
