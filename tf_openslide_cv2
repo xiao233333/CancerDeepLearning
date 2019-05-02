@@ -32,7 +32,7 @@ From: tensorflow/tensorflow:1.10.1-gpu
   apt-get install -y libsm6 libxext6
   pip3 install opencv-python
   pip3 install openslide-python
-  pip3 install numpy scipy matplotlib ipython jupyter pandas sympy nose dicom
+  pip3 install numpy scipy matplotlib ipython jupyter pandas sympy nose pydicom
   pip3 install tensorflow==2.0.0-alpha0 
   pip3 install keras
   pip3 install scikit-learn scikit-image
