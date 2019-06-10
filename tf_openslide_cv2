@@ -32,14 +32,14 @@ From: tensorflow/tensorflow:2.0.0a0-gpu-py3
   apt-get install -y wget git vim cmake
   apt-get install -y openslide-tools
   apt-get install -y libsm6 libxext6
-  apt-get install -y python3-pip python3-tk
-  pip3 install --upgrade pip3
-  pip3 install opencv-python
-  pip3 install openslide-python
-  pip3 install numpy scipy matplotlib ipython jupyter pandas sympy nose pydicom dicom
-  pip3 install tensorflow==2.0.0-alpha0 
-  pip3 install keras pydot graphviz
-  pip3 install scikit-learn scikit-image
+  apt-get install -y python3-tk
+  pip install --upgrade pip
+  pip install opencv-python
+  pip install openslide-python
+  pip install numpy scipy matplotlib ipython jupyter pandas sympy nose pydicom dicom
+  pip install tensorflow==2.0.0-alpha0 
+  pip install keras pydot graphviz
+  pip install scikit-learn scikit-image
 
   apt-get clean
 %runscript
