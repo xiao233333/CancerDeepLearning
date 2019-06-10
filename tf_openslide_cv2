@@ -32,11 +32,6 @@ From: tensorflow/tensorflow:2.0.0a0-gpu-py3
   apt-get install -y wget git vim cmake
   apt-get install -y openslide-tools
   apt-get install -y libsm6 libxext6
-  wget https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tgz
-  tar xzf Python-3.7.3.tgz
-  cd Python-3.7.3
-  ./configure --enable-optimizations
-  make altinstall
   apt-get install -y python3-pip python3-tk
   pip3 install --upgrade pip
   pip3 install opencv-python
