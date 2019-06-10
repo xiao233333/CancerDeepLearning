@@ -34,7 +34,7 @@ From: tensorflow/tensorflow:1.10.1-gpu
   pip3 install openslide-python
   pip3 install numpy scipy matplotlib ipython jupyter pandas sympy nose pydicom dicom
   pip3 install tensorflow==2.0.0-alpha0 
-  pip3 install keras
+  pip3 install keras pydot graphviz
   pip3 install scikit-learn scikit-image
 
   apt-get clean
