@@ -34,13 +34,14 @@ From: tensorflow/tensorflow:2.0.0a0-gpu-py3
   apt-get install -y openslide-tools
   apt-get install -y libsm6 libxext6
   apt-get install -y python3-tk python3-pip
-  pip3 install opencv-python
-  pip3 install openslide-python
-  pip3 install numpy scipy matplotlib ipython jupyter pandas sympy nose pydicom dicom
-  pip3 install tensorflow==2.0.0-alpha0 
-  pip3 install keras pydot graphviz
-  pip3 install scikit-learn scikit-image
-  pip3 install xgboost minecart quilt
+  python3 -m pip install --upgrade pip
+  python3 -m pip install opencv-python
+  python3 -m pip install openslide-python
+  python3 -m pip install numpy scipy matplotlib ipython jupyter pandas sympy nose pydicom dicom
+  python3 -m pip install tensorflow==2.0.0-alpha0 
+  python3 -m pip install keras pydot graphviz
+  python3 -m pip install scikit-learn scikit-image
+  python3 -m pip install xgboost minecart quilt
   quilt install ResidentMario/missingno_data
   git clone https://github.com/SuperElastix/SimpleElastix
   mkdir build
