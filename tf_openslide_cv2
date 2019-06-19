@@ -5,7 +5,7 @@ From: tensorflow/tensorflow:2.0.0a0-gpu-py3
   # use bash as default shell
   SHELL=/bin/bash
   export SHELL
-  CMAKE_USE_OPENSSL=TRUE
+  export CMAKE_USE_OPENSSL=TRUE
 
 %setup
   # runs on host - the path to the image is $SINGULARITY_ROOTFS
