@@ -27,7 +27,7 @@ From: tensorflow/tensorflow:2.0.0a0-gpu-py3
   # additional packages
   apt-get update
   DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends apt-utils
-  apt-get install -y build-essential checkinstall wget
+  apt-get install -y build-essential checkinstall wget swig monodevelop r-base r-base-dev ruby ruby-dev python3 python3-dev tcl tcl-dev tk tk-dev
   wget https://github.com/Kitware/CMake/releases/download/v3.15.0-rc1/cmake-3.15.0-rc1.tar.gz
   tar -xzvf cmake-3.15.0-rc1.tar.gz
   cd cmake-3.15.0-rc1
