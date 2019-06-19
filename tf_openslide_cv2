@@ -34,7 +34,6 @@ From: tensorflow/tensorflow:2.0.0a0-gpu-py3
   apt-get install -y openslide-tools
   apt-get install -y libsm6 libxext6
   apt-get install -y python3-tk python3-pip
-  pip3 install --upgrade pip
   pip3 install opencv-python
   pip3 install openslide-python
   pip3 install numpy scipy matplotlib ipython jupyter pandas sympy nose pydicom dicom
