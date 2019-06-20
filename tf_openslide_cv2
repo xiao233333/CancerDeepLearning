@@ -5,7 +5,6 @@ From: tensorflow/tensorflow:2.0.0a0-gpu-py3
   # use bash as default shell
   SHELL=/bin/bash
   export SHELL
-  export CMAKE_USE_OPENSSL=TRUE
 
 %setup
   # runs on host - the path to the image is $SINGULARITY_ROOTFS
@@ -54,7 +53,7 @@ From: tensorflow/tensorflow:2.0.0a0-gpu-py3
   git clone https://github.com/SuperElastix/SimpleElastix
   mkdir build
   cd build
-  cmake -DWRAP_CSHARP:BOOL=OFF -DWRAP_JAVA:BOOL=OFF -DWRAP_LUA:BOOL=OFF -DWRAP_PYTHON:BOOL=ON -DWRAP_R:BOOL=OFF -DWRAP_RUBY:BOOL=OFF -DWRAP_TCL=BOOL=OFF ../SimpleElastix/SuperBuild
+  cmake -DWRAP_CSHARP:BOOL=OFF -DWRAP_JAVA:BOOL=OFF -DWRAP_LUA:BOOL=OFF -DWRAP_PYTHON:BOOL=ON -DWRAP_R:BOOL=OFF -DWRAP_RUBY:BOOL=OFF -DWRAP_TCL=BOOL=OFF -CMAKE_USE_OPENSSL=TRUE ../SimpleElastix/SuperBuild
   make >/dev/null -j8
   cd SimpleITK-build/Wrapping/Python
   python3 Packaging/setup.py --upgrade install
