@@ -54,7 +54,7 @@ From: tensorflow/tensorflow:2.0.0a0-gpu-py3
   git clone https://github.com/SuperElastix/SimpleElastix
   mkdir build
   cd build
-  cmake -DWRAP_CSHARP:BOOL=OFF -DWRAP_JAVA:BOOL=OFF -DWRAP_LUA:BOOL=OFF -DWRAP_PYTHON:BOOL=ON -DWRAP_R:BOOL=OFF -DWRAP_RUBY:BOOL=OFF -DWRAP_TCL=BOOL=OFF -DCMAKE_USE_OPENSSL=NO ../SimpleElastix/SuperBuild
+  cmake -DWRAP_CSHARP:BOOL=OFF -DWRAP_JAVA:BOOL=OFF -DWRAP_LUA:BOOL=OFF -DWRAP_PYTHON:BOOL=ON -DWRAP_R:BOOL=OFF -DWRAP_RUBY:BOOL=OFF -DWRAP_TCL=BOOL=OFF -DCMAKE_USE_OPENSSL=ON ../SimpleElastix/SuperBuild
   make >/dev/null -j8
   cd SimpleITK-build/Wrapping/Python
   python3 Packaging/setup.py --upgrade install
