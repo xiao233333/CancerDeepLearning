@@ -6,7 +6,7 @@ From: tensorflow/tensorflow:2.0.0a0-gpu-py3
   SHELL=/bin/bash
   export SHELL
   export HDF5_USE_FILE_LOCKING='FALSE'
-  export CMAKE_USE_OPENSSL:BOOL=ON
+  export CMAKE_USE_OPENSSL=ON
 
 %setup
   # runs on host - the path to the image is $SINGULARITY_ROOTFS
