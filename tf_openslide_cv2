@@ -51,7 +51,7 @@ From: tensorflow/tensorflow:2.0.0a0-gpu-py3
   python3 -m pip install xgboost minecart quilt
   quilt install ResidentMario/missingno_data
   
-  git clone https://github.com/SuperElastix/SimpleElastix
+  git clone https://github.com/xiao233333/SimpleElastix.git
   rm SimpleElastix/.ExternalData/README.rst
   mkdir build
   cd build
