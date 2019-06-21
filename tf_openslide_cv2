@@ -52,6 +52,7 @@ From: tensorflow/tensorflow:2.0.0a0-gpu-py3
   quilt install ResidentMario/missingno_data
   
   git clone https://github.com/SuperElastix/SimpleElastix
+  rm SimpleElastix/.ExternalData/README.rst
   mkdir build
   cd build
   cmake -DWRAP_CSHARP:BOOL=OFF -DWRAP_JAVA:BOOL=OFF -DWRAP_LUA:BOOL=OFF -DWRAP_PYTHON:BOOL=ON -DWRAP_R:BOOL=OFF -DWRAP_RUBY:BOOL=OFF -DWRAP_TCL=BOOL=OFF -DCMAKE_USE_OPENSSL:BOOL=ON ../SimpleElastix/SuperBuild
