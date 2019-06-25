@@ -5,7 +5,6 @@ From: tensorflow/tensorflow:2.0.0a0-gpu-py3
   # use bash as default shell
   SHELL=/bin/bash
   export SHELL
-  export HDF5_USE_FILE_LOCKING='FALSE'
 
 %setup
   # runs on host - the path to the image is $SINGULARITY_ROOTFS
@@ -29,13 +28,6 @@ From: tensorflow/tensorflow:2.0.0a0-gpu-py3
   apt-get update
   DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends apt-utils
   apt-get install -y build-essential checkinstall wget swig monodevelop r-base r-base-dev ruby ruby-dev python3 python3-dev tcl tcl-dev tk tk-dev
-  wget https://github.com/Kitware/CMake/releases/download/v3.14.5/cmake-3.14.5.tar.gz
-  tar -xzvf cmake-3.14.5.tar.gz
-  cd cmake-3.14.5
-  ./bootstrap
-  make -j8
-  make install
-  cd ../
   apt-get install -y libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev
   apt-get install -y git vim
   apt-get install -y openslide-tools
@@ -50,21 +42,6 @@ From: tensorflow/tensorflow:2.0.0a0-gpu-py3
   python3 -m pip install scikit-learn scikit-image
   python3 -m pip install xgboost minecart quilt
   quilt install ResidentMario/missingno_data
-  
-  git clone https://github.com/xiao233333/SimpleElastix.git
-  rm SimpleElastix/.ExternalData/README.rst
-  mkdir build
-  cd build
-  cmake -DWRAP_CSHARP:BOOL=OFF -DWRAP_JAVA:BOOL=OFF -DWRAP_LUA:BOOL=OFF -DWRAP_PYTHON:BOOL=ON -DWRAP_R:BOOL=OFF -DWRAP_RUBY:BOOL=OFF -DWRAP_TCL=BOOL=OFF -DCMAKE_USE_OPENSSL:BOOL=ON ../SimpleElastix/SuperBuild
-  make >/dev/null -j8
-  cd SimpleITK-build/Wrapping/Python
-  python3 Packaging/setup.py --upgrade install
-  
-  git clone https://github.com/xiao233333/pyelastix.git
-  cd pyelastix
-  python3 setup.py --upgrade install
-  cd ../
-  
 
   apt-get clean
 %runscript
